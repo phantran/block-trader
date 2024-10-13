@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "1907:5432"
+    environment:
+      POSTGRES_USER: blocktrader
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: blocktrader
